@@ -1,0 +1,244 @@
+<!DOCTYPE>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Google Maps Platform WebGL Codelab</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>   
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+          <div class="logo">
+            <img src="/img/logo.svg" alt="logo">
+            <!-- <div class="header_content"></div> -->
+            <p class="portal">Geo Free | 3</p>
+          </div>
+          <nav class="nav">
+            <p>How It Works</p>
+            <p>Plan Your Trip</p>
+            <p>Destinations</p>
+            <p>Support us</p>
+          </nav>
+          <button class="btn btn_login">Login</button>
+        </div>
+      </div>
+    </header>
+    <div id="map"></div>
+    <div class="route">    
+      <div class="group13-container">
+      <div class="group13-group13">
+        <span class="group13-text"><span>Route history of Alice</span></span>
+        <span class="group13-text02">
+          <span>
+            Latitude: 51,50843, Longitude: -0,09858508,  Altitude: 0,658117
+          </span>
+        </span>
+        <span class="group13-text04">
+          <span>
+            Latitude: 51,50817, Longitude: -0,09859786,  Altitude: 0,184600
+          </span>
+        </span>
+        <span class="group13-text06"><span>Duration: 210 s.</span></span>
+        <div class="group13-group5">
+          <img
+            src="img/ellipse1118-4irq-200h.png"
+            alt="Ellipse1118"
+            class="group13-ellipse1"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="Cycling113"
+            class="group13-cycling"
+          />
+        </div>
+        <div class="group13-group6">
+          <img
+            src="img/ellipse11111-9ah-200h.png"
+            alt="Ellipse11111"
+            class="group13-ellipse11"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="Cycling1112"
+            class="group13-cycling1"
+          />
+        </div>
+        <div class="group13-group11">
+          <img
+            src="img/ellipse11124-qpv3-200h.png"
+            alt="Ellipse11124"
+            class="group13-ellipse12"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="Cycling1125"
+            class="group13-cycling2"
+          />
+        </div>
+        <div class="group13-group8">
+          <img
+            src="img/ellipse11114-y4vj-200h.png"
+            alt="Ellipse11114"
+            class="group13-ellipse13"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="Shoes115"
+            class="group13-shoes"
+          />
+        </div>
+        <div class="group13-group9">
+          <img
+            src="img/ellipse21117-69pi-200h.png"
+            alt="Ellipse21117"
+            class="group13-ellipse2"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="Exercise116"
+            class="group13-exercise"
+          />
+        </div>
+        <div class="group13-group10">
+          <img
+            src="img/ellipse41122-0hg68-200h.png"
+            alt="Ellipse41122"
+            class="group13-ellipse4"
+          />
+          <img
+            src="img/shoes115-wded-200h.png"
+            alt="CabLeft117"
+            class="group13-cab-left"
+          />
+        </div>
+        <img
+          src="img/ellipse31119-rfmd-200w.png"
+          alt="Ellipse31119"
+          class="group13-ellipse3"
+        />
+        <span class="group13-text08">
+          <span>
+            Latitude: 51,50840, Longitude: -0,0985120,  Altitude: 1,118900
+          </span>
+        </span>
+        <span class="group13-text10"><span>Duration: 61 s.</span></span>
+        <img
+          src="img/ellipse41251-r83-200w.png"
+          alt="Ellipse41251"
+          class="group13-ellipse41"
+        />
+        <span class="group13-text12">
+          <span>
+            Latitude: 51,50867, Longitude: -0,09849204,  Altitude: 6,840080
+          </span>
+        </span>
+        <span class="group13-text14"><span>Duration: 75 s.</span></span>
+        <img
+          src="img/ellipse51257-jbrp-200w.png"
+          alt="Ellipse51257"
+          class="group13-ellipse5"
+        />
+        <span class="group13-text16">
+          <span>
+            Latitude: 51,50917, Longitude: -0,09846799,  Altitude: 6,81985
+          </span>
+        </span>
+        <span class="group13-text18"><span>Duration: 66 s.</span></span>
+        <img
+          src="img/ellipse61263-ig5-200w.png"
+          alt="Ellipse61263"
+          class="group13-ellipse6"
+        />
+      </div>
+      </div>
+      <div class="upload">
+        <h1>Upload an excel file</h1>
+        <div class="file">
+          <button class="btn btn_login" onclick="document.getElementById('getFile').click()">Choose File</button>
+          <input type='file' id="getFile" style="display:none">
+          <!-- <input type="file" id="file_upload" style/>   -->
+          <button class="btn btn_login"><a href="index.html">Upload</a>></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <script src="./app.js" defer></script> 
+
+      <script>
+    //     <!-- <br>
+    // <br>
+    // <textarea id="json-result" style="display:none;height:500px;width:350px;"></textarea> -->
+        // Method to upload a valid excel file
+        function upload() {
+          var files = document.getElementById('file_upload').files;
+          if(files.length==0){
+            alert("Please choose any file...");
+            return;
+          }
+          var filename = files[0].name;
+          var extension = filename.substring(filename.lastIndexOf(".")).toUpperCase();
+          if (extension == '.XLS' || extension == '.XLSX') {
+              excelFileToJSON(files[0]);
+          }else{
+              alert("Please select a valid excel file.");
+          }
+        }
+         
+        //Method to read excel file and convert it into JSON 
+        function excelFileToJSON(file){
+            try {
+              var reader = new FileReader();
+              reader.readAsBinaryString(file);
+              reader.onload = function(e) {
+   
+                  var data = e.target.result;
+                  var workbook = XLSX.read(data, {
+                      type : 'binary'
+                  });
+                  var result = {};
+                  workbook.SheetNames.forEach(function(sheetName) {
+                  var roa = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+                  if (roa.length > 0) {
+                      result[sheetName] = roa;
+                  }
+                });
+                  //displaying the json result
+                  var resultEle=document.getElementById("json-result");
+                  resultEle.value=JSON.stringify(result, null, 4);
+                  resultEle.style.display='block';
+  
+                  data.JSON = result;
+                  }
+              }catch(e){
+                  console.error(e);
+              }
+        }
+      </script>
+  </body>
+</html>
